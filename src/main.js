@@ -12,6 +12,8 @@ import {
 const btnInicio = document.querySelector('#btn-home');
 const filtersWands = document.querySelector('.filters-wands');
 const sectionHome = document.querySelector('.section-home');
+const sectionPatronus = document.querySelector('.section-patronus');
+const dataMainPatronus = document.querySelector('.main-data-patronus');
 const textPatronus = document.querySelector('.text-patronus');
 const tittlePatronus = document.querySelector('.tittle-patronus');
 const dataCharacters = document.querySelector('.main-data');
@@ -218,6 +220,8 @@ btnPhoenix.addEventListener('click', () => {
 });
 // Event to call to section patronus
 btnPatronus.addEventListener('click', () => {
+  sectionPatronus.classList.remove('hide');
+  dataMainPatronus.classList.remove('hide');
   sectionHome.classList.toggle('section-home');
   sectionHome.classList.add('hide');
   filtersCharacters.classList.add('hide');

@@ -44,35 +44,43 @@
             Es por ello que hemos elaborado esta guía de informacion del juego para conocer más sobre el Mundo Mágico, las características de los personajes
             y los datos principales que necesitas para empezar el juego.</p>
         </div>
-        <iframe class="video-home" width="560" height="315" src="https://www.youtube.com/embed/rEEJ7NOe0hw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video class="video-home" controls ><source src="./video/wizard.mp4" type="video/mp4"></video>
         <div class="link-download">
           <a class="link-game" target="_blank" href="https://play.google.com/store/apps/details?id=com.nianticlabs.hpwu.prod&hl=es">DESCARGALO AQUÍ</a>
         </div>
       </section>
       <section class="filters-characters hide">
         <p>Clasifica por:</p>
-        <p>Casa:</p>
-          <select class="selectHouse select">
-            <option value="">Selecciona..</option>
-            <option value="Gryffindor">Gryffindor</option>
-            <option value="Ravenclaw">Ravenclaw</option>
-            <option value="Slytherin">Slytherin</option>
-            <option value="Hufflepuff">Hufflepuff</option>
-            <option value="">No especificado</option>
-          </select>
-        <p>Rol:</p>
-        <select class="selectRole select">
-          <option value="">Selecciona..</option>
-          <option value="true">Estudiante</option>
-          <option value="false">Profesor</option>
-          <option value="">No especificado</option>
-        </select>
-        <p>Género:</p>
-        <select class="selectGender select">
-          <option value="">Selecciona..</option>
-          <option value="female">Femenino</option>
-          <option value="male">Masculino</option>
-        </select>
+          <div class="filters">
+            <div class="filter-opction">
+              <p>Casa:</p>
+            <select class="selectHouse select">
+              <option value="">Selecciona..</option>
+              <option value="Gryffindor">Gryffindor</option>
+              <option value="Ravenclaw">Ravenclaw</option>
+              <option value="Slytherin">Slytherin</option>
+              <option value="Hufflepuff">Hufflepuff</option>
+              <option value="">No especificado</option>
+            </select>
+            </div>
+            <div class="filter-opction">
+              <p>Rol:</p>
+              <select class="selectRole select">
+                <option value="">Selecciona..</option>
+                <option value="true">Estudiante</option>
+                <option value="false">Profesor</option>
+                <option value="">No especificado</option>
+              </select>
+            </div> 
+            <div class="filter-opction">
+              <p>Género:</p>
+              <select class="selectGender select">
+                <option value="">Selecciona..</option>
+                <option value="female">Femenino</option>
+                <option value="male">Masculino</option>
+              </select>
+            </div>
+          </div>
       </section>
       <section class="main-data"></section>
       <section class="modal"></section>
@@ -96,13 +104,11 @@
         </div> 
       </section>
       <section class="data-wands"></section>
-      <section class="section-patronus">
-        <div class="main-data-patronus">
+      <section class="section-patronus hide">
+        <div class="main-data-patronus hide">
           <h3 class="tittle-patronus hide">¿Qué es un patronus?</h3>
-          <p class="text-patronus hide">El Patronus es una forma de magia avanzada con la que incluso los magos más calificados pueden luchar.
-            Es "una especie de antidementor, un guardián que actúa como un escudo entre usted y el dementor ", es una especie de fuerza 
-            positiva, una proyección de las mismas cosas de las que se alimenta el Dementor: esperanza, felicidad, el deseo de sobrevivir,
-            pero no puede sentir desesperación, como los humanos reales, por lo que los Dementores no pueden lastimarlo.</p>
+          <p class="text-patronus hide"> Es una fuerza positiva, una proyección de las mismas cosas de las que se alimenta el Dementor: esperanza, felicidad, el deseo de sobrevivir,
+            pero no puede sentir desesperación, como un humano real, por lo que los Dementores no pueden luchar contra ella.</p>
         </div>
         <div class="data-patronus"></div>
       </section>

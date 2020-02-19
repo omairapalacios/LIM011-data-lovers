@@ -19,7 +19,7 @@ header {
   background-size: contain;
   position: fixed;
   height: 13%;
-  background: rgb(20, 20, 20);
+  background: #000000;
 }
 .logo {
   display: flex;
@@ -97,6 +97,9 @@ nav ul li {
   font-size: 16px;
   text-transform: uppercase;
   font-family: "Segoe UI Light";
+}
+li {
+  list-style: none;
 }
 .search {
   justify-content: center;
@@ -412,7 +415,8 @@ main {
   border: 1px #f3f3f3 solid;
 }
 .main-data-patronus {
-  margin-top: 45px;
+  margin-top: 40px;
+  margin-bottom: 7px;
   background:rgb(19, 17, 16);
   text-align: justify;
   color: #f3f3f3;
@@ -497,14 +501,14 @@ footer li a {
   flex-direction: column;
   justify-items: center;
   color: #f3f3f3;
-  background: rgb(6, 33, 56);
+  background: #112533;
   }
 .description-modal {
   display: flex;
   justify-content: space-around;
 }
 .main-modal {
-  background: rgb(6, 33, 56);
+  background: #112533;
   padding-bottom: 10px;
   font-size: 16px;
   color: #f3f3f3;
@@ -632,4 +636,455 @@ footer li a {
 }
 .popup-patronus.active {	
   transform: scale(1); opacity: 1; 
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+  .checkbtn {
+    margin-left: 64%;
+  }
+  .searchbar {
+    width: 272px;
+    font-size: 15px;
+    height: 22px;
+    margin: 5px 0px 5px 40px;
+  }
+  .searchbar:focus {
+    width: 284px;
+    font-size: 13px;
+}
+  .icon-search {
+    left: 80%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+  .checkbtn {
+    margin-left: 67%;
+  }
+  .img-logo {
+    margin: 20px 0px 5px 20px;
+  } 
+  .searchbar {
+    width: 330px;
+    font-size: 16px;
+    margin: 8px 0px 8px 40px;
+  }
+  .searchbar:focus {
+    width: 335px;
+    font-size: 16px;
+  }
+  .card-data {
+    width: 40%;
+  }
+  .card-details {
+    height: 65%;
+  }
+  .card-description {
+    margin: 10px;
+  }
+  .img-card {
+    width: 100px;
+    height: 135px;
+  }
+  .icon-search {
+    margin-top: 12px;
+    left: 80%;
+  }
+  .text-paragraph{
+    font-size: 18px;
+  }
+  .text-tittle {
+    font-size: 24px;
+  }
+  
+  .video-home {
+    height: 260px;
+  }
+  .popup {
+    width: 218px;
+  }
+  .link-game {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .icon-menu {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background: transparent;
+    height: 10px;
+    margin-left: 4px;
+  }
+  .checkbtn {
+    display: none;
+  }
+  nav ul li {
+    border-bottom: solid #f3f3f3 1px;
+    border-bottom: none;
+    padding: 10px 15px;
+  }
+  .btn-menu {
+    font-size: 18px;
+  }
+  .img-logo {
+    margin: 20px 0px 5px 30px;
+  } 
+  .ul-menu {
+    margin-top: 18px;
+    display: flex;
+    position: relative;
+    margin-left: 16%;
+    left: 0%;
+    width: auto;
+    height: auto;
+    background: none;
+  } 
+  .checkbtn-menu{
+    margin: 0;
+  }
+  .checkbtn-menu i{
+    display: none;
+  }
+  .text-paragraph{
+    font-size: 25px;
+    margin: 20px;
+  }
+  .text-tittle {
+    font-size: 32px;
+  }
+  .img-logo {
+    margin: 30px 0px 5px 50px;
+    width: 110px;
+    height: 65px;
+  } 
+  .video-home {
+    height: 350px;
+  }
+  .link-game {
+    font-size: 18px;
+  }
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+  .searchbar {
+    margin: 20px;
+    margin-left: 30%;
+    width: 40%;
+    font-size: 20px;
+    height: 38px;
+  }
+  .searchbar:focus {
+    width: 43%;
+    font-size: 20px;
+}
+  .icon-search {
+    margin-top: 30px;
+    left: 68%;
+    font-size: 30px;
+  }
+  .icon-menu {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background: transparent;
+    height: 10px;
+    margin-left: 4px;
+  }
+  .checkbtn {
+    display: none;
+  }
+  nav ul li {
+    margin-top: 4px;
+    border-bottom: solid #f3f3f3 1px;
+    border-bottom: none;
+    padding: 10px 20px;
+  }
+  nav ul li:hover {
+    background:#ce8303;
+    padding: 10px 20px;
+  }
+  .btn-menu {
+    font-size: 20px;
+  }
+  .img-logo {
+    margin: 20px 0px 5px 30px;
+  } 
+  .text-home {
+    background: transparent;
+  }
+  .text-paragraph{
+    width: 50%;
+    font-size: 26px;
+    padding: 50px 60px;
+  }
+  .text-tittle {
+    width: 60%;
+    font-size: 36px;
+    padding: 50px 25px 10px 40px ;
+  }
+  .card-data {
+    width: 20%;
+  }
+  .filters-wands {
+    margin-top: 10px;
+  }
+  .tittle-wands {
+    padding-top: 28px;
+    font-size: 25px;
+  }
+  .text-paragraph-wand {
+    font-size: 19px;
+    margin: 15px;
+  }
+  .video-home {
+    padding: 0;
+    margin: 0;
+  }
+  .popup {
+    width: 218px;
+  }
+  .link-game {
+    width: 50%;
+  }
+  .ul-menu {
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    margin-left: 32%;
+    left: 0%;
+    width: auto;
+    height: auto;
+    background: none;
+  } 
+  .checkbtn-menu{
+    margin: 0;
+  }
+  .checkbtn-menu i{
+    display: none;
+  }
+  main {
+    padding-top: 100px;
+  }
+  .filters-characters {
+    flex-direction: row;
+  }
+  .filters {
+    display: flex;
+    justify-content: center;
+  }
+  .filter-opction {
+    width: 20%;
+    margin: 10px 30px;
+  }
+  .select {
+    width: 100%;
+  }
+  .section-home {
+    background-image: linear-gradient(#00000042, #000000) ,url(./img/mas.jpg);
+    margin: 10px 10px 10px 9px;
+    background-position: center;
+  }
+  .text-wands p{
+    width: 17%;
+  }
+  .btn-wands {
+    margin: 0px 60px;
+  }
+  .card-data-wands {
+    width: 32%;
+  }
+  .main-data-patronus {
+    margin-top: 14px;
+  }
+  .text-patronus {
+    margin: 15px;
+  }
+  .text-
+  .video-home {
+    padding: 5px;
+    margin-left: 5%;
+    margin-bottom: 8%;
+    margin-top: 0;
+    height: 350px;
+    width: 65%;
+  }
+  .link-download {
+    width: 30%;
+    position: absolute;
+    bottom: 20%;
+  }
+  .ul-footer {
+    font-size: 15px;
+  }
+  .team {
+    padding: 10px 40px;
+  }
+  .team-dev {
+    width: 20%;
+  }
+  .team-ux{
+    width: 20%;
+  }
+  .img-logo {
+    margin-top: 20px;
+    width: 115px;
+    height: 65px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .icon-menu {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background: transparent;
+    height: 10px;
+    margin-left: 4px;
+  }
+  .checkbtn {
+    display: none;
+  }
+  nav ul li {
+    border-bottom: solid #f3f3f3 1px;
+    border-bottom: none;
+    padding: 30px;
+    font-size: 20px;
+  }
+  nav ul li:hover {
+    background:#ce8303;
+    padding: 20px 30px;
+  }
+  .img-logo {
+    margin: 30px 0px 5px 50px;
+    width: 116px;
+    height: 65px;
+  } 
+  .ul-menu {
+    display: flex;
+    position: relative;
+    margin-left: 60%;
+    left: 0%;
+    width: auto;
+    height: auto;
+    background: none;
+  } 
+  .checkbtn-menu{
+    margin: 0;
+  }
+  .checkbtn-menu i{
+    display: none;
+  }
+  main {
+    padding-top: 110px;
+  }
+  .section-home {
+    background-image: linear-gradient(#00000042, #000000) ,url(./img/mas.jpg);
+    margin: 22px 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .text-paragraph{
+    width: 50%;
+    font-size: 26px;
+    padding: 60px;
+  }
+  .text-tittle {
+    width: 60%;
+    font-size: 36px;
+    padding: 50px 25px 10px 40px ;
+  }
+  .video-home {
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    width: 40%;
+    padding: 0;
+    height: 270px;
+  }
+  .text-home {
+    background: transparent;
+  }
+  .link-download {
+    margin-left: 15%;
+    width: 30%;
+    position: absolute;
+    bottom: 46%;
+  }
+  .img-logo {
+    margin-top: 20px;
+    width: 120px;
+    height: 68px;
+  }
+  .icon-search {
+    margin-top: 25px;
+    left:63%;
+  }
+  .searchbar {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 32%;
+    width: 30%;
+    height: 30px;
+    font-size: 18px;
+  }
+  .searchbar:focus {
+    width: 32%;
+    height: 30px;
+    font-size: 18px;
+  }
+  .filters-characters p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .ul-menu {
+    margin-top: 8px;
+    margin-left: 47%;
+  } 
+  .filters-characters {
+    flex-direction: row;
+  }
+  .filters {
+    display: flex;
+    justify-content: center;
+  }
+  .filter-opction {
+    width: 20%;
+    margin: 10px 30px;
+  }
+  .select {
+    width: 80%;
+    font-size: 13px;
+  }
+  .card-data {
+    width: 13%;
+    margin: 15px;
+  }
+  .img-card {
+    height: 158px;
+    width: 142px;
+  }
+  .card-details {
+    height: 62%;
+  }
+  .card-description {
+    margin-bottom: 20px;
+  }
+  .popup {
+    width: 230px;
+  }
+  .ul-footer {
+    font-size: 20px;
+  }
+  .team {
+    padding: 10px 40px;
+  }
+  .team-dev {
+    width: 20%;
+  }
+  .team-ux{
+    width: 20%;
+  }
+
 }
