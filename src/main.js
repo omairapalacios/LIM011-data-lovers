@@ -71,7 +71,7 @@ const showMainTemplate = (objDataPotter) => {
         </div>
       </div>
       <div>
-        <h3>Varita</h3>
+        <h3>Wand</h3>
         <p> Wood : ${objDataPotter.wood || 'not defined'}  </p>
         <p> Core : ${objDataPotter.core || 'not defined'}</p>
         <p> Length : ${objDataPotter.length || 'not defined'}</p>
