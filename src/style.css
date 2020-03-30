@@ -871,6 +871,8 @@ footer li a {
   }
   .ul-footer {
     font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .team {
     padding: 10px 40px;
