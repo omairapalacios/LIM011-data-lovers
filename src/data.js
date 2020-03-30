@@ -152,7 +152,7 @@ const addDescriptionPatronus = (object) => {
 const changeWandWood = (object) => {
   let newDataWand;
   if (object.wand.wood === '') {
-    newDataWand = 'no especificado';
+    newDataWand = 'not defined';
   } else {
     newDataWand = object.wand.wood;
   }
@@ -161,7 +161,7 @@ const changeWandWood = (object) => {
 const changeWandCore = (object) => {
   let newDataWand;
   if (object.wand.core === '') {
-    newDataWand = 'no especificado';
+    newDataWand = 'not defined';
   } else {
     newDataWand = object.wand.core;
   }
@@ -170,7 +170,7 @@ const changeWandCore = (object) => {
 const changeWandLength = (object) => {
   let newDataWand;
   if (object.wand.length === '') {
-    newDataWand = 'no especificado';
+    newDataWand = 'not defined';
   } else {
     newDataWand = object.wand.length;
   }

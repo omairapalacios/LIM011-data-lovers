@@ -16,7 +16,7 @@ const sectionPatronus = document.querySelector('.section-patronus');
 const dataMainPatronus = document.querySelector('.main-data-patronus');
 const textPatronus = document.querySelector('.text-patronus');
 const tittlePatronus = document.querySelector('.tittle-patronus');
-const dataCharacters = document.querySelector('.main-data');
+const dataCharacters = document.querySelector('.data-characters');
 const filtersCharacters = document.querySelector('.filters-characters');
 const btnFiltersWand = document.querySelector('.btn-filters-wands');
 const selectElementHouse = document.querySelector('.selectHouse');
@@ -41,7 +41,7 @@ const showMainTemplate = (objDataPotter) => {
     </div>
     <div class='card-description'> 
       <h2 class='features' id='name'>${objDataPotter.name}</h2>
-      <h3 class='features' id='house'>~ ${objDataPotter.house} ~</h3>
+      <h3 class='features' id='house'>~ ${objDataPotter.house || 'not defined'} ~</h3>
       <button class='btn-general features btn-knowmore' type='submit'>DESCUBRE MAS</button> 
     </div> `;
   const btnShow = template.querySelector('button');
@@ -54,8 +54,8 @@ const showMainTemplate = (objDataPotter) => {
     <article class='header-modal'>
       <a href='#' id='btn-cerrar-popup' class='btn-cerrar-popup'><i class='fas fa-times'></i></a>
       <h2 class='features' id='name'>${objDataPotter.name}</h2>
-      <h3 class='features' id='house'>~ ${objDataPotter.house} ~</h3> 
-      <img class='img-modal-card' src='${objDataPotter.image}'/>
+      <h3 class='features' id='house'>~ ${objDataPotter.house || 'not defined'} ~</h3> 
+      <img class='img-modal-card' src='${objDataPotter.image || 'not defined'}'/>
     </article>
     <article class='main-modal'>
       <div class='description-modal'>
@@ -65,16 +65,16 @@ const showMainTemplate = (objDataPotter) => {
           <h3> Patronus :</h3>
         </div>
         <div class='description-text'>
-          <h3 class='text-p'>${objDataPotter.dateOfBirth}</h3>
-          <h3 class='text-p'>${objDataPotter.ancestry}</h3>
-          <h3 class='text-p'>${objDataPotter.patronus}</h3>
+          <h3 class='text-p'>${objDataPotter.dateOfBirth || 'not defined'}</h3>
+          <h3 class='text-p'>${objDataPotter.ancestry || 'not defined'}</h3>
+          <h3 class='text-p'>${objDataPotter.patronus || 'not defined'}</h3>
         </div>
       </div>
       <div>
         <h3>Varita</h3>
-        <p> Madera : ${objDataPotter.wood}</p>
-        <p> Nucleo : ${objDataPotter.core}</p>
-        <p> Tamaño : ${objDataPotter.length}</p>
+        <p> Madera : ${objDataPotter.wood || 'not defined'}  </p>
+        <p> Nucleo : ${objDataPotter.core || 'not defined'}</p>
+        <p> Tamaño : ${objDataPotter.length || 'not defined'}</p>
       </div>
     </article>
   </div>`;
@@ -104,18 +104,18 @@ const showTemplateWands = (objDataPotter) => {
     <h4 class='tittle-wand'>Varita</h4>
     <div class='card-wood'>
       <p class='wood'>Madera:</p>
-      <p class='wood'>${objDataPotter.wood}</p>
+      <p class='wood'>${objDataPotter.wood || 'not defined'}</p>
       <img class='img-wood' src='./img/wood.png'/>
     </div>
     <div class='card-lenght'>
       <p class='length'>Tamaño:</p>
-      <p class='length'>${objDataPotter.length}''</p>
+      <p class='length'>${objDataPotter.length || 'not defined'}''</p>
       <img class='img-ruler' src='./img/ruler.png'/> 
     </div>
     <div class='card-core'>
         <p class='core'>Núcleo:</p>
-        <p>${objDataPotter.core}</p>
-        <img class='img-core' src='${objDataPotter.imgCore}'/>
+        <p>${objDataPotter.core || 'not defined'}</p>
+        <img class='img-core' src='${objDataPotter.imgCore || 'not defined'}'/>
     </div>
   </div>
     `;
@@ -128,12 +128,12 @@ const showTemplatePatronus = (objDataPotter) => {
   template.className = 'card-data-patronus';
   template.innerHTML = `
       <div class='card-header-patronus'>
-        <h2 class='card-name-patronus'>${objDataPotter.name}</h2>
+        <h2 class='card-name-patronus'>${objDataPotter.name || 'not defined'}</h2>
       </div>
       <div class='card-description-patronus'>
-        <img class='img-characters-patronus' src='${objDataPotter.image}'/>
+        <img class='img-characters-patronus' src='${objDataPotter.image || 'not defined'}'/>
         <p class='card-name-patronus'> Patronus: </p>
-        <p class='card-name-patronus'>${objDataPotter.patronus} </p>
+        <p class='card-name-patronus'>${objDataPotter.patronus || 'not defined'} </p>
         <button class='btn-general btn-show-patronus' type='submit'>MOSTRAR MÁS</button> 
       </div>
     `;
@@ -145,10 +145,10 @@ const showTemplatePatronus = (objDataPotter) => {
     <div class='popup-patronus'>
     <section class = 'header-modal-patronus'>
       <a href='#' id='btn-cerrar-popup' class='btn-cerrar-popup'><i class='fas fa-times'></i></a>
-      <h3 class='modal-features'> Patronus : ${objDataPotter.patronus}</h3>
-      <img class='img-characters-patronus' src='${objDataPotter.imgPatronus}'/>
+      <h3 class='modal-features'> Patronus : ${objDataPotter.patronus || 'not defined'}</h3>
+      <img class='img-characters-patronus' src='${objDataPotter.imgPatronus || 'not defined'}'/>
       <h3 class='modal-features'> Descripcion</h3>
-      <p>${objDataPotter.descriptionPatronus} </p>
+      <p>${objDataPotter.descriptionPatronus || 'not defined'} </p>
     <section/>`;
     overlayPatronus.innerHTML = cardPotterPatronus;
     document.querySelector('.modal-patronus').appendChild(overlayPatronus);
@@ -166,7 +166,7 @@ const showTemplatePatronus = (objDataPotter) => {
 // function to go through for each object (characters)
 const showMainData = (data) => {
   data.forEach((objDataPotter) => {
-    document.querySelector('.main-data').appendChild(showMainTemplate(objDataPotter));
+    document.querySelector('.data-characters').appendChild(showMainTemplate(objDataPotter));
   });
   return showMainData;
 };
@@ -186,8 +186,11 @@ const showPatronusData = (listdataPotter) => {
 };
 // Event to call to section wands
 btnWand.addEventListener('click', () => {
-  sectionHome.classList.toggle('section-home');
-  sectionHome.classList.add('hide');
+  dataCharacters.innerHTML = '';
+  sectionHome.innerHTML = '';
+  dataWands.innerHTML = '';
+  sectionPatronus.classList.add('hide');
+  sectionSearch.classList.add('hide');
   filtersWands.classList.remove('hide');
   filtersCharacters.classList.add('hide');
   btnFiltersWand.classList.remove('hide');
@@ -221,9 +224,8 @@ btnPhoenix.addEventListener('click', () => {
 // Event to call to section patronus
 btnPatronus.addEventListener('click', () => {
   sectionPatronus.classList.remove('hide');
+  sectionHome.innerHTML = '';
   dataMainPatronus.classList.remove('hide');
-  sectionHome.classList.toggle('section-home');
-  sectionHome.classList.add('hide');
   filtersCharacters.classList.add('hide');
   filtersWands.classList.add('hide');
   tittlePatronus.classList.remove('hide');
@@ -265,11 +267,13 @@ searchBox.addEventListener('keyup', (buscar) => {
 });
 // events to show characters
 btnCharacters.addEventListener('click', () => {
-  sectionHome.classList.toggle('section-home');
-  sectionHome.classList.add('hide');
-  dataCharacters.classList.add('data-characters');
-  filtersCharacters.classList.remove('hide');
+  dataCharacters.innerHTML = '';
+  sectionHome.innerHTML = '';
+  dataWands.innerHTML = '';
+  filtersWands.classList.add('hide');
   sectionSearch.classList.remove('hide');
+  filtersCharacters.classList.remove('hide');
+  sectionPatronus.classList.add('hide');
   const newData = newDataPotter(dataPotter);
   showMainData(newData);
 });
