@@ -42,7 +42,7 @@ const showMainTemplate = (objDataPotter) => {
     <div class='card-description'> 
       <h2 class='features' id='name'>${objDataPotter.name}</h2>
       <h3 class='features' id='house'>~ ${objDataPotter.house || 'not defined'} ~</h3>
-      <button class='btn-general features btn-knowmore' type='submit'>DESCUBRE MAS</button> 
+      <button class='btn-general features btn-knowmore' type='submit'>MORE DETAILS</button> 
     </div> `;
   const btnShow = template.querySelector('button');
   // event to create modal
@@ -60,8 +60,8 @@ const showMainTemplate = (objDataPotter) => {
     <article class='main-modal'>
       <div class='description-modal'>
         <div class="description-text">
-          <h3> Fecha de Nac :</h3>
-          <h3> Origen :</h3>
+          <h3> Date of Birth :</h3>
+          <h3> Ancestry :</h3>
           <h3> Patronus :</h3>
         </div>
         <div class='description-text'>
@@ -72,9 +72,9 @@ const showMainTemplate = (objDataPotter) => {
       </div>
       <div>
         <h3>Varita</h3>
-        <p> Madera : ${objDataPotter.wood || 'not defined'}  </p>
-        <p> Nucleo : ${objDataPotter.core || 'not defined'}</p>
-        <p> Tamaño : ${objDataPotter.length || 'not defined'}</p>
+        <p> Wood : ${objDataPotter.wood || 'not defined'}  </p>
+        <p> Core : ${objDataPotter.core || 'not defined'}</p>
+        <p> Length : ${objDataPotter.length || 'not defined'}</p>
       </div>
     </article>
   </div>`;
@@ -101,19 +101,19 @@ const showTemplateWands = (objDataPotter) => {
     <img class='img-wand-characters' src='${objDataPotter.image}'/>
   </div>
   <div class='card-description-wands'>
-    <h4 class='tittle-wand'>Varita</h4>
+    <h4 class='tittle-wand'>Wand</h4>
     <div class='card-wood'>
-      <p class='wood'>Madera:</p>
+      <p class='wood'>Wood:</p>
       <p class='wood'>${objDataPotter.wood || 'not defined'}</p>
       <img class='img-wood' src='./img/wood.png'/>
     </div>
     <div class='card-lenght'>
-      <p class='length'>Tamaño:</p>
+      <p class='length'>Length:</p>
       <p class='length'>${objDataPotter.length || 'not defined'}''</p>
       <img class='img-ruler' src='./img/ruler.png'/> 
     </div>
     <div class='card-core'>
-        <p class='core'>Núcleo:</p>
+        <p class='core'>Core:</p>
         <p>${objDataPotter.core || 'not defined'}</p>
         <img class='img-core' src='${objDataPotter.imgCore || 'not defined'}'/>
     </div>
@@ -134,7 +134,7 @@ const showTemplatePatronus = (objDataPotter) => {
         <img class='img-characters-patronus' src='${objDataPotter.image || 'not defined'}'/>
         <p class='card-name-patronus'> Patronus: </p>
         <p class='card-name-patronus'>${objDataPotter.patronus || 'not defined'} </p>
-        <button class='btn-general btn-show-patronus' type='submit'>MOSTRAR MÁS</button> 
+        <button class='btn-general btn-show-patronus' type='submit'>MORE DETAILS</button> 
       </div>
     `;
   const btnShow = template.querySelector('button');
@@ -147,7 +147,7 @@ const showTemplatePatronus = (objDataPotter) => {
       <a href='#' id='btn-cerrar-popup' class='btn-cerrar-popup'><i class='fas fa-times'></i></a>
       <h3 class='modal-features'> Patronus : ${objDataPotter.patronus || 'not defined'}</h3>
       <img class='img-characters-patronus' src='${objDataPotter.imgPatronus || 'not defined'}'/>
-      <h3 class='modal-features'> Descripcion</h3>
+      <h3 class='modal-features'> Description</h3>
       <p>${objDataPotter.descriptionPatronus || 'not defined'} </p>
     <section/>`;
     overlayPatronus.innerHTML = cardPotterPatronus;
