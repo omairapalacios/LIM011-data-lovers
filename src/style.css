@@ -194,6 +194,7 @@ li {
   border-radius: 2px;
   border: 1px #f3f3f3 solid;
   animation: pulse 2s infinite;
+  box-shadow: -3px -1px 2px 2px #ffffff2e;
 }
 
 @keyframes pulse {
@@ -318,6 +319,7 @@ main {
   margin: 6px 10px;
   border-radius: 2px;
   animation: pulse 3s infinite;
+  box-shadow: -3px -1px 2px 2px #ffffff2e;
 }
 
 @keyframes pulse {
@@ -405,6 +407,7 @@ main {
   border-radius: 2px;
   transition: all 0.3s ease 0s;
   animation: pulse 2s infinite;
+  box-shadow: -3px -1px 2px 2px #ffffff2e;
 }
 
 @keyframes pulse {
