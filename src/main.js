@@ -259,8 +259,8 @@ selectElementGender.addEventListener('change', (event) => {
 });
 // Evento to call to function search
 const searchBox = document.querySelector('#searchBar');
-searchBox.addEventListener('keyup', (buscar) => {
-  const searcher = buscar.target.value;
+searchBox.addEventListener('keyup', (searchEvent) => {
+  const searcher = searchEvent.target.value;
   const finded = search(dataPotter, searcher);
   dataCharacters.querySelectorAll('.card-data').forEach((child) => child.remove());
   showMainData(finded);

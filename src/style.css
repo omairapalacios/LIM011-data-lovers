@@ -11,7 +11,7 @@ body {
   background-position: center;
 }
 .hide {
-  display : none;
+  display: none;
 }
 /* header selectors*/
 header {
@@ -28,7 +28,7 @@ header {
   margin: 16px 6px 10px 10px;
   width: 76px;
   height: 52px;
-} 
+}
 .icon-search {
   cursor: pointer;
   color: #000000;
@@ -49,12 +49,12 @@ header {
   margin-top: 14px;
   margin-left: 60%;
 }
-.checkbtn-menu{
-  margin-left: 85%; 
+.checkbtn-menu {
+  margin-left: 85%;
 }
-.checkbtn-menu i{
-  padding: 15px; 
-  color:#f3f3f3;
+.checkbtn-menu i {
+  padding: 15px;
+  color: #f3f3f3;
 }
 nav ul li {
   border-bottom: solid #f3f3f3 1px;
@@ -82,16 +82,16 @@ nav ul li {
 #check-menu {
   display: none;
 }
-#check:checked ~ .ul-menu{
+#check:checked ~ .ul-menu {
   left: 0;
 }
-#check-menu:checked ~ .ul-menu{
+#check-menu:checked ~ .ul-menu {
   left: 0;
 }
 .btn-menu {
   width: 100%;
   height: 50px;
-  background:transparent;
+  background: transparent;
   border-style: none;
   color: #f3f3f3;
   font-size: 16px;
@@ -101,28 +101,28 @@ nav ul li {
 li {
   list-style: none;
 }
-.search {                 
+.search {
   justify-content: center;
   background: rgb(240, 239, 241);
 }
 .searchbar {
-    background-color: #f3f3f3;
-    color: #000000;
-    width: 200px;
-    height: 22px;
-    margin: 5px 0px 5px 55px;
-    padding: 4px 8px;
-    font-family: "Segoe UI Light";
-    font-size: 12px;
-    font-weight: bold;
-    border: #000000 solid 1px; 
-    border-radius: 10px;  
+  background-color: #f3f3f3;
+  color: #000000;
+  width: 200px;
+  height: 22px;
+  margin: 5px 0px 5px 55px;
+  padding: 4px 8px;
+  font-family: "Segoe UI Light";
+  font-size: 12px;
+  font-weight: bold;
+  border: #000000 solid 1px;
+  border-radius: 10px;
 }
 .searchbar:focus {
-    width: 210px;
-    font-family: "Segoe UI Light";
-    transition: 0.3s;
-    outline: none;
+  width: 210px;
+  font-family: "Segoe UI Light";
+  transition: 0.3s;
+  outline: none;
 }
 /* home selectors */
 .section-home {
@@ -131,7 +131,7 @@ li {
   margin: 20px 10px 10px 10px;
 }
 .text-home {
-  background-image: linear-gradient(#00000042, #000000) ,url(./img/mas.jpg);
+  background-image: linear-gradient(#00000042, #000000), url(./img/mas.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
@@ -151,10 +151,9 @@ li {
   color: #f3f3f3;
   padding: 18px 15px;
   text-align: justify;
-
 }
 .text-menu {
-  color:#f3f3f3;
+  color: #f3f3f3;
   font-family: "Segoe UI Light";
   font-weight: lighter;
   font-size: 10px;
@@ -173,7 +172,7 @@ li {
   background: #f3f3f3;
   border-style: none;
   border-radius: 25px;
-  color:black;
+  color: black;
   border: 1px #f3f3f3 solid;
   font-family: "Segoe UI Light";
   font-size: 12px;
@@ -191,11 +190,21 @@ li {
   flex-basis: auto;
   margin: 7px;
   text-align: center;
-  background: rgb(6, 33, 56);
   color: #f3f3f3;
-  border: 1px #f3f3f3 solid;
   border-radius: 2px;
+  border: 1px #f3f3f3 solid;
+  animation: pulse 2s infinite;
 }
+
+@keyframes pulse {
+  0% {
+    background: rgb(6, 33, 56);
+  }
+  100% {
+    background: rgb(21, 26, 31);
+  }
+}
+
 .card-description {
   margin: 19px 10px 0px 10px;
   justify-content: center;
@@ -205,7 +214,8 @@ li {
   font-size: 16px;
   font-family: Georgia;
 }
-.card-description h3, .text-p {
+.card-description h3,
+.text-p {
   text-align: center;
   font-size: 14px;
   margin-bottom: 7px;
@@ -215,7 +225,7 @@ li {
 .card-details {
   width: 100%;
   height: 60%;
-  justify-content: center; 
+  justify-content: center;
 }
 .data-characters {
   display: flex;
@@ -243,7 +253,7 @@ li {
   width: 58%;
   background-color: #f3f3f3;
   border: none;
-  margin:2px 0px 2px 10px;
+  margin: 2px 0px 2px 10px;
   padding: 5px;
   font-family: "Segoe UI Light";
   font-size: 11px;
@@ -255,8 +265,17 @@ li {
   width: 113px;
   height: 140px;
   border-radius: 50%;
-  border: 1px #f3f3f3 solid;
+  animation: bord 5s infinite;
 }
+
+/* @keyframes bord {
+  0% {
+    border: 1px #f3f3f3 solid;
+  }
+  100% {
+    border: 1px #9b7c04 solid;
+  }
+} */
 main {
   background: rgb(20, 20, 20);
   padding-top: 54px;
@@ -269,7 +288,7 @@ main {
   justify-content: center;
 }
 .btn-wands {
-  border:none;
+  border: none;
   margin: 5px 10px;
 }
 #btn-dragon {
@@ -298,6 +317,16 @@ main {
   width: 90%;
   margin: 6px 10px;
   border-radius: 2px;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background: rgb(6, 33, 56);
+  }
+  100% {
+    background: rgb(21, 26, 31);
+  }
 }
 .filters-wands {
   padding-bottom: 10px;
@@ -340,10 +369,11 @@ main {
   width: 56%;
   text-align: center;
 }
-.card-description-wands, .description-text {
-  margin: 12px 0px 5px 0px;
+.card-description-wands,
+.description-text {
+  margin: 12px 0px 5px 4px;
   text-align: left;
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Segoe UI Light";
 }
 .data-wands {
@@ -370,10 +400,20 @@ main {
   margin: 7px;
   text-align: center;
   background: rgb(6, 33, 56);
-  color:#f3f3f3;
+  color: #f3f3f3;
   border: 1px #f3f3f3 solid;
   border-radius: 2px;
   transition: all 0.3s ease 0s;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background: rgb(6, 33, 56);
+  }
+  100% {
+    background: rgb(21, 26, 31);
+  }
 }
 .card-name-patronus {
   text-align: center;
@@ -393,7 +433,7 @@ main {
   margin-bottom: 7px;
   background: rgb(20, 20, 20);
   text-align: center;
-  color:#f3f3f3;
+  color: #f3f3f3;
   padding: 5px 15px;
 }
 
@@ -402,9 +442,11 @@ main {
   color: #f3f3f3;
   font-size: 14px;
   text-align: justify;
-  padding:0px 26px;
+  padding: 0px 26px;
 }
-.tittle-patronus, .subtittle-patronus, .tittle-wands {
+.tittle-patronus,
+.subtittle-patronus,
+.tittle-wands {
   font-family: "Segoe UI Light";
   color: #ce8303;
   font-size: 18px;
@@ -414,11 +456,11 @@ main {
   text-align: center;
 }
 /* footer selectors*/
-footer{
+footer {
   display: flex;
   width: 100%;
   height: auto;
-  background:#000000;
+  background: #000000;
   color: #f3f3f3;
   text-align: center;
   font-family: "Segoe UI Light";
@@ -441,7 +483,8 @@ footer li a {
   list-style: none;
   margin: 4px 28px;
 }
-.team-dev, .team-ux{
+.team-dev,
+.team-ux {
   display: flex;
   flex-direction: column;
 }
@@ -451,22 +494,23 @@ footer li a {
   color: #f3f3f3;
   transform: rotateY(180deg);
 }
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
-.card-data-patronus:hover .card-inner{
+.card-data-patronus:hover .card-inner {
   transform: rotateY(180deg);
 }
 .card-inner {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   text-align: center;
   transition: transform 0.2s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*---------------------------------- Modal Characters -------------------------------- */
@@ -476,7 +520,7 @@ footer li a {
   justify-items: center;
   color: #f3f3f3;
   background: #112533;
-  }
+}
 .description-modal {
   display: flex;
   justify-content: space-around;
@@ -484,67 +528,67 @@ footer li a {
 .main-modal {
   background: #112533;
   padding-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   color: #f3f3f3;
   font-family: "Segoe UI Light";
 }
 .img-modal-card {
-  width:110px;
-  height:130px;
-  border-radius:50%;
+  width: 110px;
+  height: 130px;
+  border-radius: 50%;
   border: #f3f3f3 solid 1px;
   align-self: center;
   margin: 5px;
 }
 .overlay {
-	background: rgba(12, 96, 134, 0.384);
-	position: fixed;
+  background: rgba(12, 96, 134, 0.384);
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   visibility: hidden;
   z-index: 2;
 }
 .overlay.active {
-	visibility: visible;
+  visibility: visible;
 }
 .popup {
-	background: #f3f3f3;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 10px;
-	text-align: center;
-  width: 205px;
-  height: 380px;
+  background: #f3f3f3;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  text-align: center;
+  width: 218px;
+  height: 372px;
   font-size: 11px;
-	transition: .3s ease all;
-	transform: scale(0.7);
+  transition: 0.3s ease all;
+  transform: scale(0.7);
   opacity: 0;
   z-index: 2;
-  position: absolute; 
+  position: absolute;
 }
 .popup .btn-cerrar-popup {
-	font-size: 16px;
-	line-height: 16px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  transition: 0.3s ease all;
   color: #f3f3f3;
   z-index: 3;
   margin: 6px;
   position: relative;
 }
 .popup .btn-cerrar-popup:hover {
-	color: rgb(124, 15, 15);
+  color: rgb(124, 15, 15);
 }
-.popup.active {	
-  transform: scale(1); 
-  opacity: 1; 
+.popup.active {
+  transform: scale(1);
+  opacity: 1;
 }
 /*---------------------------------- Modal Patronus-------------------------------- */
 .header-modal-patronus {
@@ -556,63 +600,64 @@ footer li a {
   color: #f3f3f3;
   background: rgb(6, 33, 56);
   font-size: 16px;
-  }
+}
 
-.header-modal-patronus p{
+.header-modal-patronus p {
   text-align: justify;
   padding: 15px;
 }
 
 .overlay-patronus {
-	background: rgba(12, 96, 134, 0.384);
-	position: fixed;
+  background: rgba(12, 96, 134, 0.384);
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   visibility: hidden;
   z-index: 2;
 }
 .overlay-patronus.active {
-	visibility: visible;
+  visibility: visible;
 }
 .popup-patronus {
-	background: #f3f3f3;
-	box-shadow: 0px 0px 5px 0px rgba(25,71,95,0.88);
-	border-radius: 3px;
+  background: #f3f3f3;
+  box-shadow: 0px 0px 5px 0px rgba(25, 71, 95, 0.88);
+  border-radius: 3px;
   font-size: 12px;
-	padding: 8px;
-	text-align: center;
+  padding: 8px;
+  text-align: center;
   width: 250px;
   height: 400px;
-	transition: .3s ease all;
-	transform: scale(0.7);
+  transition: 0.3s ease all;
+  transform: scale(0.7);
   opacity: 0;
   z-index: 2;
-  position: absolute; 
+  position: absolute;
 }
 .popup-patronus .btn-cerrar-popup {
-	font-size: 16px;
-	line-height: 16px;
-	display: block;
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
   text-align: right;
   padding: 10px;
-	transition: .3s ease all;
+  transition: 0.3s ease all;
   color: #f3f3f3;
   z-index: 3;
   position: relative;
 }
 .popup-patronus .btn-cerrar-popup:hover {
-	color: rgb(124, 15, 15);
+  color: rgb(124, 15, 15);
 }
-.popup-patronus.active {	
-  transform: scale(1); opacity: 1; 
+.popup-patronus.active {
+  transform: scale(1);
+  opacity: 1;
 }
 
-@media (min-width: 375px) and (max-width: 424px){
+@media (min-width: 375px) and (max-width: 424px) {
   .checkbtn {
     margin-left: 64%;
   }
@@ -625,19 +670,19 @@ footer li a {
   .searchbar:focus {
     width: 284px;
     font-size: 13px;
-}
+  }
   .icon-search {
     left: 80%;
   }
 }
 
-@media (min-width: 425px) and (max-width: 767px){
+@media (min-width: 425px) and (max-width: 767px) {
   .checkbtn {
     margin-left: 67%;
   }
   .img-logo {
     margin: 20px 0px 5px 20px;
-  } 
+  }
   .searchbar {
     width: 330px;
     font-size: 16px;
@@ -664,13 +709,13 @@ footer li a {
     margin-top: 12px;
     left: 80%;
   }
-  .text-paragraph{
+  .text-paragraph {
     font-size: 18px;
   }
   .text-tittle {
     font-size: 24px;
   }
-  
+
   .video-home {
     height: 260px;
   }
@@ -679,7 +724,13 @@ footer li a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card-data {
+    width: 24%;
+  }
+  .card-data-wands {
+    width: 38%;
+  }
   .icon-menu {
     color: #f3f3f3;
     font-size: 22px;
@@ -700,7 +751,7 @@ footer li a {
   }
   .img-logo {
     margin: 20px 0px 5px 30px;
-  } 
+  }
   .ul-menu {
     margin-top: 18px;
     display: flex;
@@ -710,14 +761,14 @@ footer li a {
     width: auto;
     height: auto;
     background: none;
-  } 
-  .checkbtn-menu{
+  }
+  .checkbtn-menu {
     margin: 0;
   }
-  .checkbtn-menu i{
+  .checkbtn-menu i {
     display: none;
   }
-  .text-paragraph{
+  .text-paragraph {
     font-size: 25px;
     margin: 20px;
   }
@@ -728,11 +779,13 @@ footer li a {
     margin: 30px 0px 5px 50px;
     width: 110px;
     height: 65px;
-  } 
+  }
   .video-home {
     height: 350px;
   }
-
+  .tittle-wands{
+    padding-top: 35px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -750,7 +803,7 @@ footer li a {
   .searchbar:focus {
     width: 43%;
     font-size: 20px;
-}
+  }
   .icon-search {
     margin-top: 30px;
     left: 68%;
@@ -773,7 +826,7 @@ footer li a {
     padding: 10px 20px;
   }
   nav ul li:hover {
-    background:#ce8303;
+    background: #ce8303;
     padding: 10px 20px;
   }
   .btn-menu {
@@ -781,11 +834,11 @@ footer li a {
   }
   .img-logo {
     margin: 20px 0px 5px 30px;
-  } 
+  }
   .text-home {
     background: transparent;
   }
-  .text-paragraph{
+  .text-paragraph {
     width: 50%;
     font-size: 20px;
     padding: 50px 60px;
@@ -793,15 +846,34 @@ footer li a {
   .text-tittle {
     width: 60%;
     font-size: 36px;
-    padding: 50px 25px 10px 40px ;
+    padding: 50px 25px 10px 40px;
+    position: relative;
+    animation-name: left-tittle;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes left-tittle {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      left: 40px;
+      top: 0px;
+    }
+    75% {
+      left: 0px;
+      top: 10px;
+    }
   }
   .card-data {
     width: 14%;
     margin-left: 20px;
   }
   .card-description {
-      margin: 12px;
-    }
+    margin: 12px;
+  }
   .tittle-wands {
     padding-top: 28px;
     font-size: 25px;
@@ -812,7 +884,7 @@ footer li a {
   }
   .popup {
     width: 235px;
-    height: 378px;
+    height: 373px;
   }
   .ul-menu {
     margin-top: 5px;
@@ -823,11 +895,11 @@ footer li a {
     width: auto;
     height: auto;
     background: none;
-  } 
-  .checkbtn-menu{
+  }
+  .checkbtn-menu {
     margin: 0;
   }
-  .checkbtn-menu i{
+  .checkbtn-menu i {
     display: none;
   }
   .filters-characters {
@@ -845,7 +917,7 @@ footer li a {
     width: 100%;
   }
   .section-home {
-    background-image: linear-gradient(#00000042, #000000) ,url(./img/mas.jpg);
+    background-image: linear-gradient(#00000042, #000000), url(./img/mas.jpg);
     margin: 10px 10px 10px 9px;
     background-position: center;
   }
@@ -861,7 +933,7 @@ footer li a {
   }
   .text-patronus {
     text-align: center;
-    color:  #f3f3f3;
+    color: #f3f3f3;
     margin: 15px;
   }
   .video-home {
@@ -880,7 +952,7 @@ footer li a {
   .team-dev {
     width: 20%;
   }
-  .team-ux{
+  .team-ux {
     width: 20%;
   }
   .img-logo {
