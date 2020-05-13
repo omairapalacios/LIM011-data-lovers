@@ -1,26 +1,17 @@
 # Data Lovers
+![Imagen logo](.\src\img\logo.png)
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Parte adicional-opcional (extensión)](#6-parte-adicional-opcional-extensión)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [1. Definición del producto](#1-definicion-del-)
+* [2. Historias de Usuario](#2-historias-de-usuario)
+* [3. Diseño de la interfaz de usuario](#3-diseño-de-la-interfaz-de-usuario)
+* [4. Objetivos de aprendizaje](#4-objetivos-de-aprendizaje)
 
 ***
-## 5. Criterios de aceptación mínimos del proyecto
+## 1. Definición del producto
 
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
-'Harry Potter: Wizards Unite' es un nuevo videojuego de Warner Bros ambientado en 
+**'Harry Potter: Wizards Unite'** es un nuevo videojuego de Warner Bros ambientado en 
 el mundo de Harry Potter. Ha sido desarrollado por los creadores de 'Pokémon Go', Niantic, 
 y eso hace que el juego tenga las mismas mecánicas que el juego basado en el mundo de Pokémon. 
 De hecho, la base del mapa es exactamente la misma.
@@ -34,76 +25,184 @@ haciendo gestos en la pantalla o alineando elementos. Según cómo lo hagas cons
 menos puntos de experiencia. A lo largo de las partidas irás subiendo de nivel y consiguiendo 
 objetos, objetos que podrás usar a tu favor.
 
-### Historias de usuario
+* Para conocer más sobre el juego [click aquí](https://www.harrypotterwizardsunite.com/es/)
 
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de entendimiento de tus usuarios.
+**Harry Potter: Guide for Wizard Unite Gamers** es una aplicación para los que inician en el juego, ya que sirve como una guía para conocer más de los personajes de la saga y así poder saber las características de nuestros personajes favoritos para poder utilizarla en el juego.
 
+La aplicación se diseño inicialmente solo para manipular la data, pensando más en la parte visual. Sin embargo, al iniciar el proyecto nos dimos cuenta de que no le ofreciamos al usuario del juego lo que realmente necesitaba, así que reestructuramos nuestros prototipos para ofrecer la mejor experiencia a la hora de interactuar en la aplicación.
 
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
+* Para acceder a nuestra aplicación [click aquí]()
 
-En la medida de lo posible, termina de construir una historia de usuario antes
-de pasar a la siguiente (Cumple con Definición de Terminado + Criterios de
-Aceptación).
+## 2. Historias de Usuario
 
-### Diseño de la Interfaz de Usuario
+### Historia de Usuario 1
+
+Yo COMO jugador de Harry Potter: Wizards Unite  QUIERO  visualizar la lista de personajes y sus datos PARA conocer mas sobre ellos ( foto , nombre, casa ).
+
+#### Criterios de aceptación
+* Visualizar el nombre de la pagina.
+* Ver los datos de cada personaje(foto, nombre, casa).
+* Visualizar la interfaz en desktop.
+* Visualizar la interfaz en mobile.
+
+#### Definición de Terminado
+* Estructura HTML : Crear un "header" con el nombre de la página y un "main" para la data (HTML Semántico).
+* Investigar como jalar data, como manipular objetos y arrays.
+* Hacer una funcion para mostrar data en pantalla ( foto , nombre y casa) (Manejo objetos , arrays y eventos del DOM)
+* Ajustar fotos de los personajes a un tamaño determinado (Selectores CSS)
+* Crear caja que contenga (foto y datos : nombre y casa) ( CSS )
+* Alinear las cajas en columnas de acuerdo al dispositivo ( CSS FlexBox)
+* Adaptar la interfaz a distintos dispositivos (Responsive Design)
+* Actualizar proyecto en git hub.
+
+### Historia de Usuario 2
+Yo COMO jugador de Harry Potter: Wizards Unite QUIERO conocer detalladamente a cada personaje PARA aprender más del mundo mágico.
+
+#### Criterios de aceptación
+* Visualizar boton " Descubre más"  
+* Ver ventana emergente con las carasteristicas especificas del personaje al darle click al boton "Descubre más"
+* Visualizar la interfaz en Desktop
+* Visualizar la interfaz en Mobile
+* Ver publicado el producto
+
+#### Definición de Terminado
+* Crear un header con el logo de la pagina.
+* Ver boton "Descubre más" en la card de cada personaje.
+* Crear Modal Cards
+* Hacer función para enlazar el boton "Descubre más" con el Modal Card".
+* Aprender a trabajar con pull request.
+* Centrar los elementos dentro del Modal Card (CSS Flexbox).
+* Dar estilos al boton y al Modal Card (colores , formas , fuentes ) (Visual Design)
+* Hacer una funcion para mostrar datos en el Modal Card ( DRY)
+* Actualizar el proyecto en GitHub
+
+### Historia de Usuario 3
+Yo COMO jugador de Harry Potter: Wizards Unite QUIERO filtrar a los personajes según ciertas características(casa, rol, género) PARA poder elegir las caracteristicas de mi personaje favorito en el juego.
+
+#### Criterios de aceptación
+* Visualizar botones de filtrado(casa, rol, género)
+* Visualizar la interfaz en Desktop
+* Visualizar la interfaz en Mobile
+* Ver publicado el producto
+
+#### Definición de Terminado
+* Ver botones de filtrado con opciones para seleccionar.
+* Crear select por cada opción de filtrado en el main(HTML)
+* Hacer función de filtrado utilizando metodo filter (por casa, por rol y por género)
+* Dar estilos a los select 
+* Separar los archivos .js (entender sobre manejo del DOM y la lógica)
+* Testear funciones de filtro
+* Actualizar cambios en Github
+
+### Historia de Usuario 4
+Yo COMO jugador de Harry Potter: Wizards Unite QUIERO filtrar las varitas según su núcleo PARA poder cambiar mi varita antes de una batalla.
+
+#### Criterios de aceptación
+* Visualizar boton Varitas y poder seleccionarlas por su núcleo.
+* Visualizar los datos principales de las varitas de los personajes por su tamaño y el tipo de madera.
+* Visualizar la interfaz en Desktop
+* Visualizar la interfaz en Mobile
+* Ver publicado el producto
+
+#### Definición de Terminado
+* Crear un botón Varitas
+* Mostrar las 3 opciones de núcleo con su respectiva imagen.
+* Hacer función de filtrado al seleccionar cada imagen.
+* Crear template con nombre, imagen y propiedades de la varita por personaje.
+* Testear funciones de filtro
+* Que sea responsive
+* Actualizar cambios en Github
+
+### Historia de Usuario 5
+Yo COMO jugador de Harry Potter: Wizards Unite QUIERO conocer los patronus de mis personajes PARA saber si se parece al mio.
+
+#### Criterios de aceptación
+* Visualizar boton Patronus 
+* Visualizar el nombre del patronus de cada personaje.
+* Visualizar la interfaz en Desktop
+* Visualizar la interfaz en Mobile
+* Ver publicado el producto
+
+#### Definición de Terminado
+* Crear un botón Patronus
+* Hacer función de filtrado de patronus para que retorne esa data.
+* Crear template con nombre, imagen y nombre del patronus de cada personaje.
+* Testear funcion de filtro
+* Que sea responsive
+* Actualizar cambios en Github
+
+### Historia de Usuario 6
+Yo COMO jugador de Harry Potter: Wizards Unite QUIERO buscar por sus nombres a los personajes PARA conocer sus datos.
+
+#### Criterios de aceptación
+* Visualizar input con icono de lupa para digitar el nombre.  
+* Visualizar el input en la parte superior de la pantalla.
+* Visualizar la interfaz en Desktop
+* Visualizar la interfaz en Mobile
+* Ver publicado el producto
+
+#### Definición de Terminado
+* Crear un input y agregar un icono en el header.
+* Hacer función de busqueda que reconozca cada letra digitada.
+* Testear funcion de busqueda
+* Que sea responsive
+* Actualizar cambios en Github
+
+### Historia de Usuario 7
+Yo COMO jugador de Harry Potter: Wizards Unite QUIERO que haya un menú en la pagina PARA ver los datos ordenadamente.
+
+#### Criterios de aceptación
+* Visualizar menu de navegación con todos los botones creados.
+* Visualizar el menu debajo del logo y la sección búsqueda.
+* Visualizar el menu estatico mientras bajo en la pagina.
+* Visualizar la interfaz en Desktop
+* Visualizar la interfaz en Mobile
+* Ver publicado el producto
+
+#### Definición de Terminado
+* Crear un menu de navegación en el header.
+* Añadir los botones de inicio, filtrado, varitas y patronus al menú.
+* Linkear cada botón con su contenido.
+* Crear evento para mostrar y ocultar secciones del menú según su manipulación.
+* Que sea responsive
+* Actualizar cambios en Github
+
+### Historia de Usuario 8
+Yo COMO jugador de Harry Potter: Wizards Unite QUIERO ver una pagina de inicio PARA conocer más sobre el juego.
+
+#### Criterios de aceptación
+* Visualizar la pagina de inicio apenas entre a la pagina.
+* Visualizar una descripción del juego y/o un video.
+* Visualizar un link para descargar el juego.
+* Visualizar la interfaz en Desktop
+* Visualizar la interfaz en Mobile
+* Ver publicado el producto
+
+#### Definición de Terminado
+* Crear una sección de pantalla de inicio en el main.
+* Añadir un background relacionado al juego.
+* Crear un div con h2 y h3 con información sobre el juego.
+* Insertar un video descriptivo del juego, linkearlo a la pagina.
+* Crear un boton con link directo al juego en Play Store.
+* Que sea responsive
+* Actualizar cambios en Github
+
+## 3. Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
-
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
+Se elaboró el prototipo en papel en el que plasmamos como queríamos que se viera la interfaz. Luego testeamos con algunas personas para recibir feedback y mejorar el aplicativo.
+* Ver prototipo [click aquí](https://drive.google.com/drive/folders/1SmZaOm_k9ERZP4IoXYhAm4jZweYIK0mM)
 
 #### Prototipo de alta fidelidad
-
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc. Recuerda utilizar la
-[identidad gráfica](https://drive.google.com/open?id=1eeWFqrWpy-OYOH4EHDckFGunyrm9iNeE)
-correspondiente a cada set de datos que elijas.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
+Ya con el testing del sketch decidimos utilizar Figma para elaborar nuestro prototipo de alta fidelidad, donde vimos elementos de visual design, para seleccionar los colores, tipografia y elementos del aplicativo.
+* Ver prototipo en Figma [click aquí](https://www.figma.com/file/STWsAukTf2PjQ9LPgVysjQ/Harry-Potter?node-id=1%3A7)
 
 #### Testeos de usabilidad
 
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
+Ya luego de hacer testeos de usabilidad nos dimos cuenta que nuestra pagina aunque se veia visualmente bien, no estaba pensada realmente en el usuario ya que era más un catalogo que una guía para los que iniciaban en el juego. Por ello, reestructuramos el aplicativo quitando y añadiendo ciertos elementos para que el usuario encuentre util la pagina.
 
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-**No** es necesario que construyas la interfaz exactamente como la diseñaste.
-No tienes tiempo ilimitado para trabajar, así es que deberás priorizar.
-
-Como mínimo, tu implementación debe:
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita. <!--filtrar y ordenar la data.-->
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
-
-### Pruebas unitarias
-
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones que tenga tu código. <!--encargadas de  _procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_
-estadísticas.-->
-
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
-en la sección de [Consideraciones técnicas](#srcdatajs).
+Por ejemplo, en el prototipo inicial existia una pantalla de bienvenida, otra para que ingrese su nombre, otra para seleccionar una imagen de usuario. Sin embargo, al testear nos dimos cuenta que esas pantallas le eran innecesarias al jugador porque este buscaba una pagina a la cual acceder rapidamente y en donde pueda observar facilmente elementos como los personajes, varitas y/o patronus.
+Es por ello, que en nuestra propuesta final se decidió hacer un menu vertical de facil acceso para el usuario, eliminando todas las pantallas anteriores.
 
 ## 3. Objetivos de aprendizaje
 
