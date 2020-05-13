@@ -1,5 +1,4 @@
 # Data Lovers
-![Imagen logo](.\src\img\logo.png)
 
 ## Índice
 
